@@ -12,8 +12,8 @@ import {
   TransactionsIcon,
   LockOpenIcon,
 } from "@/assets/iconsComponents";
-import logo from "../assets/icons/Logo.svg";
-import symbol from "../assets/icons/symbol.svg";
+import logo from "../assets/images/Logo.svg";
+import symbol from "../assets/images/symbol.svg";
 import Image from "next/image";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -89,10 +89,10 @@ const SideBar = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <aside className="px-4 py-8 bg-green-bg  h-full flex flex-col">
+    <aside className="px-4 py-8 h-full flex flex-col">
       <Image src={logo} alt="logo" width={141} height={38} className="mb-7" />
       <div className="flex flex-col justify-between  flex-1 ">
-        <div className="space-y-2">
+        <div>
           {menuItems.map((item, index) => {
             const isActive = pathname.includes(item.link);
             return (
@@ -100,7 +100,7 @@ const SideBar = () => {
                 <div
                   onClick={() => item.subMenu && setCollapsed(!collapsed)}
                   className={cn(
-                    "flex justify-between items-center text-gray-30 h-10 w-40 pl-5 rounded-3xl cursor-pointer text-sm font-semibold hover:bg-green-light/30",
+                    "flex justify-between items-center mb-2 text-gray-30 h-10 w-40 pl-5 rounded-3xl cursor-pointer text-sm font-semibold hover:bg-green-light/30",
                     isActive && "bg-green-light text-black",
                     item.subMenu && "hover:bg-transparent hover:text-black"
                   )}

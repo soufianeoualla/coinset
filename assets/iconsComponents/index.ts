@@ -12,4 +12,5 @@ export { default as PromosIcon } from "./SealPercent";
 export { default as SignOut } from "./SignOut";
 export { default as DashboardIcon } from "./SquaresFour";
 export { default as LockOpenIcon } from "./LockOpen";
-
+export { default as ChatIcon } from "./Chat";
+export { default as BellIcon } from "./Bell";

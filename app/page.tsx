@@ -1,9 +1,9 @@
-import SideBar from "@/components/SideBar";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <>
-      <SideBar />
-    </>
+    <div className="w-full">
+      <Header title="Dashboard" />
+    </div>
   );
 }
