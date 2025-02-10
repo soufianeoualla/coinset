@@ -14,3 +14,6 @@ export { default as DashboardIcon } from "./SquaresFour";
 export { default as LockOpenIcon } from "./LockOpen";
 export { default as ChatIcon } from "./Chat";
 export { default as BellIcon } from "./Bell";
+export { default as Clock } from "./Clock";
+export { default as PlusCircle } from "./PlusCircle";
+export { default as Request } from "./Request";

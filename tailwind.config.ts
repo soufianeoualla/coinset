@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "white":"#FBFBFC",
         "gray-10":"#EFF0F0",
         "gray-20":"#BCBEBD",
         "gray-30": "#6B7271",

@@ -6,13 +6,13 @@ import { BellIcon, ChatIcon } from "@/assets/iconsComponents";
 const Header = ({ title }: { title: string }) => {
   return (
     <header className="flex justify-between items-center w-full">
-      <h1 className="text-[22px]">{title}</h1>
-      <div className="flex items-center">
+      <h1 className="text-[22px] font-bold">{title}</h1>
+      <div className="flex items-center ">
         <Input
           placeholder="Search"
           Icon={
             <Search
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-green-dark"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-green-dark "
               width={18}
               height={18}
               strokeWidth={1.25}
